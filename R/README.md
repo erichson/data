@@ -3,10 +3,7 @@ R data-sets:
 kaggle faces
 *************
 Description: Grayscaled faces (8 bit [0-255]), 96x96 size. A few images of several different people
- and 1500 total images. Each face image is flattened and stored as a column vector.
-
-Note: This data-set is only a subset of the original kaggle face data-set,
-  which includes about 7000 faces.
+ and 7050total images. Each face image is flattened and stored as a column vector.
 
 References: Donated by Dr. Yoshua Bengio for the kaggle facial keypoints detection competion.
 
