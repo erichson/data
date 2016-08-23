@@ -1,13 +1,11 @@
 R data-sets:
 
-kaggle faces
-*************
-Description: Grayscaled faces (8 bit [0-255]), 96x96 size. A few images of several different people
- and 7050total images. Each face image is flattened and stored as a column vector.
+Subsample of the Extended Yale Face Database B faces (cropped)
+**************************************************************
+Description: Grayscaled faces (8 bit [0-255]), 96x84 size. A few images of several different people
+and 2410 total images. Each face image is flattened and stored as a column vector.
 
-References: Donated by Dr. Yoshua Bengio for the kaggle facial keypoints detection competion.
-
-Source: https://www.kaggle.com/c/facial-keypoints-detection
+References: Lee, Kuang-Chih, Jeffrey Ho, and David J. Kriegman. "Acquiring linear subspaces for face recognition under variable lighting." IEEE Transactions on pattern analysis and machine intelligence 27, no. 5 (2005): 684-698.
 
 Examples:
 ```R
@@ -15,8 +13,8 @@ utils::download.file('https://github.com/Benli11/data/raw/master/R/faces.RData',
 load("faces.RData")
 
 # Display 10th face
-img <- matrix(rev(faces[,10]), nrow=96, ncol=96)
-image(img, col=gray((0:255)/255))
+face <- matrix(rev(faces[,1]), nrow = 84, ncol = 96)
+image(face, col = gray(0:255 / 255 ))
 ```
 
 
